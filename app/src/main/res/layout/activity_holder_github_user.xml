@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    tools:context=".holder_githubUser"
+    android:background="#222d3d"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/nameRepository"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="Expreciones_postfijas"
+                android:textColor="#59a8ff"
+                android:textSize="20sp"
+                android:paddingStart="5dp"
+                android:gravity="bottom|start">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingStart="5dp"
+                >
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp">
+
+                    <ImageView
+                        android:id="@+id/circle"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_background"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Typescript"
+                        android:textSize="13sp"
+                        android:textColor="#76818e"
+                        app:layout_constraintStart_toEndOf="@id/circle"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marco Chavez"
+                    android:textSize="13sp"
+                    android:textColor="#76818e"
+                    >
+                </TextView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_border"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/followers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="129"
+                    android:textColor="#e2eaf3"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    >
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
